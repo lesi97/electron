@@ -1,0 +1,82 @@
+{
+    "asar": true,
+    "compression": "maximum",
+    "appId": "com.electron_application",
+    "productName": "Electron Application",
+    "artifactName": "Electron Application.${ext}",
+    "files": [
+        ".env",
+        "src/",
+        "dist/",
+        "src/*",
+        "!utils/",
+        "!app/private/",
+        "!build/",
+        "!**/*.ts",
+        "!*.map",
+        "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+        "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+        "!**/node_modules/*.d.ts",
+        "!**/node_modules/.bin",
+        "!**/*.{o,hprof,orig,pyc,pyo,rbc}",
+        "!**/._*",
+        "!**/electron-builder.json",
+        "!**/test",
+        "!**/tests",
+        "!**/__tests__",
+        "!eslintrc.json",
+        "!*.prettierignore",
+        "!*.prettierrc",
+        "!*.sample",
+        "!*.mjs",
+        "!*.yaml",
+        "!*.gitignore",
+        "!*.md",
+        "!*.sample",
+        "!*.csv"
+    ],
+    "asarUnpack": [],
+    "directories": {
+        "output": "build"
+    },
+    "publish": {
+        "provider": "generic",
+        "url": ""
+    },
+    "win": {
+        "icon": "./src/public/favicon.ico",
+        "target": ["nsis"]
+    },
+    "mac": {
+        "icon": "./src/public/favicon.icns",
+        "target": ["dmg"],
+        "identity": "",
+        "entitlements": "build/entitlements.mac.plist",
+        "entitlementsInherit": "build/entitlements.mac.plist",
+        "hardenedRuntime": true,
+        "gatekeeperAssess": false,
+        "artifactName": "Electron Application.${ext}"
+    },
+    "linux": {
+        "icon": "./src/public/favicon.png",
+        "target": ["AppImage"],
+        "artifactName": "Electron Application.${ext}"
+    },
+    "nsis": {
+        "oneClick": true,
+        "perMachine": false,
+        "runAfterFinish": true,
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true,
+        "deleteAppDataOnUninstall": true,
+        "allowToChangeInstallationDirectory": false,
+        "artifactName": "Electron Application Setup.${ext}"
+    },
+    "msi": {
+        "oneClick": true,
+        "artifactName": "Electron Application Setup.${ext}"
+    },
+    "portable": {
+        "artifactName": "Electron Application Portable.${ext}"
+    }
+}

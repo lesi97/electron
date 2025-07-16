@@ -1,0 +1,22 @@
+{
+    "name": "@c_lesi/electron",
+    "version": "1.0.0",
+    "description": "An electron shell template",
+    "license": "ISC",
+    "author": "c_lesi",
+    "type": "module",
+    "main": "index.js",
+    "bin": {
+        "@c_lesi/electron": "index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "files": [
+        "index.js",
+        "template"
+    ],
+    "dependencies": {
+        "inquirer": "^12.7.0"
+    }
+}
