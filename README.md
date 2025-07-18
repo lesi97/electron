@@ -30,9 +30,9 @@ $line = '@c_lesi:registry=https://npm.lesi.dev/'; $path = "$HOME\.npmrc"; $escap
 ### Install with package manager
 
 ```bash
-npx @c_lesi/logger
+npx @c_lesi/electron
 # or
-pnpm exec @c_lesi/logger
+pnpm exec @c_lesi/electron
 # or
-yarn create @c_lesi/logger
+yarn create @c_lesi/electron
 ```
