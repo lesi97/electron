@@ -4,7 +4,7 @@ Here is a custom Electron template already setup with an app window using Vite, 
 
 This has been created to make initial setup of any future Electron applications easier
 
-- [Github](https://github.com/lesi97/electron-shell)
+- [Github](https://github.com/lesi97/electron)
 - [Registry](https://npm.lesi.dev/-/web/detail/@c_lesi/electron)
 
 ## Installation
